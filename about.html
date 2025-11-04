@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About • Veterans Support Network</title>
+
+  <!-- Fonts + Shared CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <div id="wrapper">
+
+    <!-- HEADER  -->
+    <header>
+      <div class="top-header">
+        <img src="images/veteran-suicidebanner.png" alt="Veterans Support Network Logo" class="logo">
+
+        <div class="header-right">
+          <h1>Veterans Support Network</h1>
+
+          <!-- Mobile nav toggle -->
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+          <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </label>
+
+          <nav id="site-nav" aria-label="Primary">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html" aria-current="page">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="resources.html">Resources</a></li>
+			  <li><a href="heroes.html">Heroes</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- PAGE HERO  -->
+	<section class="mast-hero-img">
+	  <img src="images/community.jpg" alt="Veterans are the real heroes of America" />
+	</section>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Page Intro -->
+      <section>
+        <h2>Our Mission & Story</h2>
+        <p>
+          Veterans Support Network is committed to honoring service with action—connecting veterans and families to
+          benefits, wellness resources, and career pathways. We partner with clinicians, employers, and community
+          leaders to build the support every veteran deserves.
+        </p>
+      </section>
+
+      <!-- Three Pillars -->
+      <section class="three-up" aria-label="Our Pillars">
+        <article class="card">
+          <h3>Dignity</h3>
+          <p>We meet every veteran with respect, privacy, and a clear path forward.</p>
+          <ul>
+            <li>Confidential guidance</li>
+            <li>Peer-first approach</li>
+            <li>Trauma-informed support</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Access</h3>
+          <p>From claims to counseling, we simplify the system and remove barriers.</p>
+          <ul>
+            <li>Benefits navigation</li>
+            <li>Mental health referrals</li>
+            <li>Housing & legal links</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Opportunity</h3>
+          <p>We connect experience to employment, training, and lifelong growth.</p>
+          <ul>
+            <li>Career coaching</li>
+            <li>Certifications</li>
+            <li>Employer network</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Two-column -->
+      <section class="two-col" style="display:grid; grid-template-columns: 2fr 1fr; gap:clamp(1rem,2.5vw,1.5rem); margin-top:1rem;">
+        <article class="card" style="height:100%;">
+          <h3>Our Approach</h3>
+          <p>
+            We combine one-on-one navigation with group programming. Every veteran’s journey is unique, so we start with a
+            personalized plan—then coordinate the right mix of services and partners to make that plan real.
+          </p>
+          <p>
+            Our team includes veterans, clinicians, and advocates who understand the system and the stakes. We measure
+            outcomes, listen to feedback, and iterate to serve better each month.
+          </p>
+        </article>
+
+        <aside class="card" style="height:100%;">
+          <h3>Fast Facts</h3>
+          <ul>
+            <li>Founded: 2025</li>
+            <li>Volunteers: 75+</li>
+            <li>Partner Orgs: 30+</li>
+            <li>Counties Served: 12</li>
+          </ul>
+        </aside>
+      </section>
+
+      <!-- Leadership Cards -->
+      <section style="margin-top:1.5rem;">
+        <h2>Leadership</h2>
+        <div class="three-up">
+          <article class="card">
+            <h3>Brandon Langholz</h3>
+            <p>Executive Director • Veteran (Army)</p>
+            <p>Focus: strategy, partnerships, outcomes</p>
+          </article>
+          <article class="card">
+            <h3>Daniel Ahalt</h3>
+            <p>Director of Programs</p>
+            <p>Focus: claims navigation, wellness, training</p>
+          </article>
+          <article class="card">
+            <h3>Joe Wright</h3>
+            <p>Community Outreach Lead</p>
+            <p>Focus: events, volunteers, employer network</p>
+          </article>
+        </div>
+      </section>
+
+      
+      <section class="card" style="margin-top:1.5rem;">
+        <h3>Join Our Mission</h3>
+        <p>
+          Whether you’re a veteran, family member, employer, or clinician—there’s a role for you.
+          <a href="contact.html">Get in touch</a> to volunteer, hire, or partner with us.
+        </p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Veterans Support Network</h3>
+          <p>Respect. Resources. Community.</p>
+        </div>
+        <div class="footer-right">
+          <p>&copy; <span id="year"></span> Veterans Support Network • 501(c)(3)</p>
+          <p>Contact: <a href="mailto:blangho1@my.westga.edu">blangho1@my.westga.edu</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+

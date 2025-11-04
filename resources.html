@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resources • Veterans Support Network</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <div id="wrapper">
+
+    <!-- HEADER -->
+    <header>
+      <div class="top-header">
+        <img src="images/veteran-suicidebanner.png" alt="Veterans Support Network Logo" class="logo">
+
+        <div class="header-right">
+          <h1>Veterans Support Network</h1>
+
+          <!-- Mobile nav toggle -->
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+          <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </label>
+
+          <nav id="site-nav" aria-label="Primary">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="resources.html" aria-current="page">Resources</a></li>
+			  <li><a href="heroes.html">Heroes</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="mast-hero-img">
+      <img src="images/vetsuicideflag.jpg" alt="Resources and support for veterans and families">
+    </section>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Intro -->
+      <section>
+        <h2>Find Help Faster</h2>
+        <p>
+          This page brings together trusted links, hotlines, and tools for veterans and families. If you don’t see what
+          you need, <a href="contact.html">reach out</a>—we’ll help you find it.
+        </p>
+      </section>
+
+      <!-- Three columns with center stack -->
+      <section class="three-up" aria-label="Resource Categories">
+        <!-- Left: Crisis & Immediate Help -->
+        <article class="card fill">
+          <h3>Crisis & Immediate Help</h3>
+          <p>If you or someone you know is in crisis, please connect now:</p>
+          <ul>
+            <li><strong>Call</strong> <a href="tel:988">988</a> then press <strong>1</strong> — Veterans Crisis Line</li>
+            <li><strong>Text</strong> <a href="sms:838255">838255</a> — Veterans Crisis Line</li>
+            <li><strong>Chat</strong> online — Veterans Crisis Line website</li>
+          </ul>
+          <p style="margin-top:.5rem;">
+            You are not alone. There is help, there is hope, and there is a community ready to stand with you.
+          </p>
+        </article>
+
+        <!-- Center: Benefits & Healthcare + lower middle image -->
+        <div class="stack">
+          <article class="card">
+            <h3>Benefits & Healthcare</h3>
+            <p>Start, track, or appeal benefits and explore VA healthcare options.</p>
+            <ul>
+              <li>VA benefits overview & claims</li>
+              <li>Appeals and decision reviews</li>
+              <li>VA healthcare enrollment</li>
+              <li>Find a VA facility & patient portal</li>
+            </ul>
+          </article>
+
+          <figure class="mid-figure">
+            <img src="images/lifeline.jpg" alt="Linked dog tags symbolizing unity" class="mid-image">
+            <figcaption>United in service. Stronger together.</figcaption>
+          </figure>
+        </div>
+
+        <!-- Right: Wellness, Community & Career -->
+        <article class="card fill">
+          <h3>Wellness, Community & Career</h3>
+          <p>Connect to peer support, family resources, and civilian opportunities.</p>
+          <ul>
+            <li>Mental health & peer groups</li>
+            <li>Family & caregiver support</li>
+            <li>Education & GI Bill info</li>
+            <li>Job search & veteran-friendly employers</li>
+          </ul>
+        </article>
+      </section>
+
+
+      <section class="card" style="margin-top:1.5rem;">
+        <h3>Can’t Find What You Need?</h3>
+        <p>
+          Tell us your situation and location—we’ll route you to the best resources and help you take the next step.
+          Head to the <a href="contact.html">Contact</a> page and we’ll get back to you quickly.
+        </p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Veterans Support Network</h3>
+          <p>Respect. Resources. Community.</p>
+        </div>
+        <div class="footer-right">
+          <p>&copy; <span id="year"></span> Veterans Support Network • 501(c)(3)</p>
+          <p>Contact: <a href="mailto:blangho1@my.westga.edu">blangho1@my.westga.edu</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+

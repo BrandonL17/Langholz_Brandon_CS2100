@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veterans Support Network</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <div id="wrapper">
+
+    <!-- HEADER -->
+    <header>
+      <div class="top-header">
+        <img src="images/veteran-suicidebanner.png" alt="Veterans Support Network Logo" class="logo">
+
+        <div class="header-right">
+          <h1>Veterans Support Network</h1>
+
+          <!-- Mobile nav toggle -->
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+          <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </label>
+
+          <nav id="site-nav" aria-label="Primary">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="resources.html">Resources</a></li>
+			  <li><a href="heroes.html">Heroes</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO IMAGE -->
+	
+	<section class="mast-hero-img">
+	  <img src="images/suicideprevention.jpeg" alt="Veterans are the real heroes of America" />
+	</section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <section>
+        <h2>Welcome</h2>
+        <p>
+          We honor those who served by connecting veterans with essential resources and a community of support.
+        </p>
+      </section>
+
+      <!-- THREE-COLUMN CONTENT with center stack -->
+      <section class="three-up">
+        <!-- Left card -->
+        <article class="card fill">
+          <h3>Benefits & Claims</h3>
+          <p>Guidance for VA benefits, claims filing, appeals, and healthcare enrollment.</p>
+          <ul>
+            <li>One-on-one navigation</li>
+            <li>Forms & documentation</li>
+            <li>Appeals support</li>
+          </ul>
+        </article>
+
+        <!-- Center stack: middle card + image -->
+        <div class="stack">
+          <article class="card">
+            <h3>Wellness & Community</h3>
+            <p>Peer groups, crisis resources, and referrals for mental health and family support.</p>
+            <ul>
+              <li>Peer support meetups</li>
+              <li>Crisis hotlines</li>
+              <li>Family resources</li>
+            </ul>
+          </article>
+
+          <figure class="mid-figure">
+            <img src="images/dogtagswaragainst.jpg" alt="Dog tags representing veteran unity" class="mid-image">
+            <figcaption>United in service. Stronger together.</figcaption>
+          </figure>
+        </div>
+
+        <!-- Right card -->
+        <article class="card fill">
+          <h3>Career Readiness</h3>
+          <p>Resume help, certifications, and employer connections who value service.</p>
+          <ul>
+            <li>Resume workshops</li>
+            <li>Training programs</li>
+            <li>Job placements</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+	<footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Veterans Support Network</h3>
+          <p>Respect. Resources. Community.</p>
+        </div>
+        <div class="footer-right">
+          <p>&copy; <span id="year"></span> Veterans Support Network • 501(c)(3)</p>
+          <p>Contact: <a href="mailto:blangho1@my.westga.edu">blangho1@my.westga.edu</a></p>
+        </div>
+      </div>
+    </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

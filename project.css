@@ -1,0 +1,375 @@
+/* project.css — Veterans Support Network */
+
+/* ---------- BASE ---------- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #1A1A1A;
+  background-color: #F4F4F4;
+  line-height: 1.5;
+}
+
+img { max-width: 100%; height: auto; }
+
+#wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: #1B263B; /* Navy blue */
+  color: #FFFFFF;
+  padding: 0.75em 1em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.top-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.5em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: clamp(80px, 10vw, 120px);
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-right h1 {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  margin-bottom: 0.4em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+
+/* ---------- NAVIGATION ---------- */
+#site-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+#site-nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  padding: 0.35em 0.6em;
+  border-radius: 4px;
+  transition: background 0.25s ease-in-out;
+}
+
+#site-nav a:hover {
+  background-color: #C5A253;
+  color: #1B263B;
+}
+
+/* ---------- MOBILE NAV ---------- */
+.nav-toggle { display: none; }
+.nav-toggle-btn { display: none; cursor: pointer; align-self: flex-end; margin-bottom: .5rem; }
+.nav-toggle-btn span {
+  display: block; width: 26px; height: 3px; background: #fff; margin: 5px 0; border-radius: 2px;
+}
+
+/* ---------- HERO IMAGE ---------- */
+.mast-hero {
+  width: 100%;
+  height: clamp(260px, 45vh, 480px);
+  background-image: url('images/suicideprevention.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 5px solid #C5A253;
+}
+
+.mast-hero-img {
+  border-bottom: 5px solid #C5A253; 
+  background: #000;                 
+}
+.mast-hero-img img {
+  display: block;
+  width: 100%;
+  height: auto;     
+}
+
+/* ---------- MAIN ---------- */
+main {
+  flex: 1;
+  padding: 2em;
+}
+
+main h2 {
+  color: #1B263B;
+  font-family: "Merriweather", serif;
+  border-left: 6px solid #C5A253;
+  padding-left: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* ---------- THREE-COLUMN CONTENT ---------- */
+.three-up {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+  align-items: stretch;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card h3 {
+  font-family: "Merriweather", Georgia, serif;
+  color: #1B263B;
+  margin-bottom: 0.5rem;
+  border-bottom: 3px solid #8B0000;
+  padding-bottom: 0.25rem;
+}
+
+.card p { margin-bottom: 0.75rem; }
+.card ul { padding-left: 1.2rem; }
+.card li { margin: 0.25rem 0; }
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+
+.mid-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+.mid-image {
+  display: block;
+  width: 100%;
+  height: auto;              
+  border-radius: 10px;
+  border: 4px solid #C5A253;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.22);
+}
+
+
+.mid-figure figcaption {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #1B263B;
+  color: #FFFFFF;
+  padding: 0.75em 1em;
+  border-top: 3px solid #C5A253;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2em;
+}
+
+.footer-left {
+  max-width: 40%;
+}
+
+.footer-left h3 {
+  font-family: "Merriweather", serif;
+  color: #C5A253;
+  margin-bottom: 0.3em;
+}
+
+.footer-left p {
+  font-size: 0.9em;
+  color: #FFFFFF;
+}
+
+.footer-right {
+  text-align: right;
+  font-size: 0.85em;
+  flex: 1;
+}
+
+footer a {
+  color: #C5A253;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #FFD700;
+  text-decoration: underline;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 1020px) {
+  .three-up { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 820px) {
+  .top-header { align-items: center; }
+  .nav-toggle-btn { display: block; }
+  #site-nav { display: none; }
+  .nav-toggle:checked ~ #site-nav {
+    display: block;
+    margin-top: 0.5rem;
+  }
+  #site-nav ul { flex-direction: column; gap: 0.4rem; }
+  #site-nav a { padding: 0.5em 0.75em; }
+}
+
+@media (max-width: 700px) {
+  .three-up { grid-template-columns: 1fr; }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .footer-right {
+    text-align: center;
+  }
+  footer { padding: 0.85em 1em; }
+}
+
+@media (max-width: 500px) {
+  main { padding: 1.25em; }
+  .header-right h1 { font-size: 1.4rem; text-align: center; }
+}
+
+/* ---------- CONTACT PAGE ---------- */
+.contact-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+  margin-top: 1rem;
+}
+
+.contact-form h3,
+.contact-info h3 { margin-bottom: .5rem; }
+
+.contact-form label{
+  display:block;
+  font-weight: 600;
+  margin-top: .75rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+  width: 100%;
+  padding: .7em .8em;
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  margin-top: .35rem;
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+  outline: none;
+  border-color: #C5A253;
+  box-shadow: 0 0 0 3px rgba(197,162,83,.25);
+}
+
+.contact-method{
+  border: 1px solid #EEE;
+  border-radius: 10px;
+  padding: .6rem .8rem;
+  margin-top: .9rem;
+}
+.contact-method legend{ padding: 0 .3rem; font-weight: 700; }
+.contact-method label{ display:inline-flex; align-items:center; gap:.35rem; margin-right: 1rem; margin-top: 0; }
+
+.consent{ display:flex; align-items:center; gap:.5rem; margin-top: .8rem; }
+
+.btn{
+  margin-top: 1rem;
+  background: #8B0000;         /* deep red */
+  color: #fff;
+  border: none;
+  padding: .75em 1.1em;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn:hover{ background:#A31A1A; }
+
+/* Right column extras */
+.contact-info p { margin: .35rem 0; }
+.contact-info a { color:#1B263B; text-decoration: underline; }
+.contact-info .mini-help ul{ padding-left: 1.1rem; }
+
+/* Responsive */
+@media (max-width: 900px){
+  .contact-grid{ grid-template-columns: 1fr; }
+}
+
+
+
+
+
+/* Improve required field visibility without changing your palette */
+.contact-form label::after {
+  content: attr(data-required);
+  color: #C5A253;
+  font-weight: 800;
+  margin-left: .25rem;
+}
+
+/* Example usage: <label for="email" data-required="*">Email</label> */
+
+/* Accessible focus ring for the .btn (keeps your colors) */
+.btn:focus-visible {
+  outline: 3px solid rgba(197,162,83,.55);
+  outline-offset: 2px;
+}
+
+/* Reduce layout shift if you later add inline error messages */
+.contact-form .error {
+  color: #A31A1A;
+  font-size: 0.9rem;
+  min-height: 1.1em;
+  margin-top: .25rem;
+}
+

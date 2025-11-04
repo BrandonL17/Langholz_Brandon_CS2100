@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services • Veterans Support Network</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <div id="wrapper">
+
+    <!-- HEADER -->
+    <header>
+      <div class="top-header">
+        <img src="images/veteran-suicidebanner.png" alt="Veterans Support Network Logo" class="logo">
+
+        <div class="header-right">
+          <h1>Veterans Support Network</h1>
+
+          <!-- Mobile nav toggle -->
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+          <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </label>
+
+          <nav id="site-nav" aria-label="Primary">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html" aria-current="page">Services</a></li>
+              <li><a href="resources.html">Resources</a></li>
+			  <li><a href="heroes.html">Heroes</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="mast-hero-img">
+      <img src="images/walkingflag.jpg" alt="Our services for veterans and families">
+    </section>
+
+    <!-- MAIN -->
+    <main>
+      <section>
+        <h2>How We Serve</h2>
+        <p>
+          From navigating benefits to finding community and building civilian careers, we meet you where you are and
+          walk with you step by step.
+        </p>
+      </section>
+
+      <!-- Three columns with center stack -->
+      <section class="three-up" aria-label="Service Areas">
+        <!-- Left -->
+        <article class="card fill">
+          <h3>Benefits & Claims</h3>
+          <p>Get the benefits you’ve earned—without the guesswork.</p>
+          <ul>
+            <li>Initial claims & appeals</li>
+            <li>Healthcare enrollment</li>
+            <li>Service records & forms</li>
+            <li>Referrals to accredited reps</li>
+          </ul>
+        </article>
+
+        <!-- Center -->
+        <div class="stack">
+          <article class="card">
+            <h3>Wellness & Community</h3>
+            <p>Whole-person support with peers who understand.</p>
+            <ul>
+              <li>Peer groups & mentorship</li>
+              <li>Crisis & mental health resources</li>
+              <li>Family & caregiver support</li>
+              <li>Housing & legal navigation</li>
+            </ul>
+          </article>
+
+          <figure class="mid-figure">
+            <img src="images/factaboutsuicide.jpg" alt="Dog tags symbolizing unity" class="mid-image">
+            <figcaption>United in service. Stronger together.</figcaption>
+          </figure>
+        </div>
+
+        <!-- Right -->
+        <article class="card fill">
+          <h3>Career Readiness</h3>
+          <p>Translate your service into opportunity.</p>
+          <ul>
+            <li>Resume & interview coaching</li>
+            <li>Certifications & training</li>
+            <li>Employer introductions</li>
+            <li>Apprenticeships & placements</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="card" style="margin-top:1.5rem;">
+        <h3>Get Started</h3>
+        <p>
+          Tell us your goals and challenges—we’ll build a plan together.
+          <a href="contact.html">Contact us</a> for a 1:1 navigation session.
+        </p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Veterans Support Network</h3>
+          <p>Respect. Resources. Community.</p>
+        </div>
+        <div class="footer-right">
+          <p>&copy; <span id="year"></span> Veterans Support Network • 501(c)(3)</p>
+          <p>Contact: <a href="mailto:blangho1@my.westga.edu">blangho1@my.westga.edu</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+

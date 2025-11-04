@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heros • Veterans Support Network</title>
+
+  <!-- Fonts + Shared CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <div id="wrapper">
+
+    <!-- HEADER -->
+    <header>
+      <div class="top-header">
+        <img src="images/veteran-suicidebanner.png" alt="Veterans Support Network Logo" class="logo">
+
+        <div class="header-right">
+          <h1>Veterans Support Network</h1>
+
+          <!-- Mobile nav toggle -->
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+          <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </label>
+
+          <nav id="site-nav" aria-label="Primary">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="resources.html">Resources</a></li>
+			  <li><a href="heroes.html">Heroes</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- PAGE HERO -->
+	<section class="mast-hero-img">
+	  <img src="images/heroesflag.jpg" alt="Veterans are the real heroes of America" />
+	</section>
+
+
+    <!-- MAIN -->
+    <main>
+      <!-- Intro -->
+      <section>
+        <h2>Honoring Service. Preventing Suicide.</h2>
+        <p>
+          This page is dedicated to the men and women who raised a hand to serve. We share their stories, celebrate
+          resilience, and connect those still struggling with the support they deserve. You are not alone. Your service
+          matters, and your life matters.
+        </p>
+      </section>
+
+      <!-- Three columns with center stack -->
+      <section class="three-up" aria-label="Honor, Support, Prevention">
+        <!-- Left: Honor -->
+        <article class="card fill">
+          <h3>Honor</h3>
+          <p>
+            We recognize the commitment, sacrifice, and leadership that veterans bring to our communities.
+          </p>
+          <ul>
+            <li>Spotlights of service</li>
+            <li>Community tributes</li>
+            <li>Volunteer opportunities</li>
+          </ul>
+        </article>
+
+        <!-- Center: Support + lower middle image -->
+        <div class="stack">
+          <article class="card">
+            <h3>Support</h3>
+            <p>
+              Peer groups, mentors, and compassionate navigation for benefits, counseling, and everyday needs.
+            </p>
+            <ul>
+              <li>Peer-to-peer connection</li>
+              <li>Benefits and claims guidance</li>
+              <li>Family & caregiver resources</li>
+            </ul>
+          </article>
+
+          <figure class="mid-figure">
+            <img src="images/wordsaboutsuicide.jpeg" alt="Linked dog tags symbolizing unity" class="mid-image">
+            <figcaption>United in service. Stronger together.</figcaption>
+          </figure>
+        </div>
+
+        <!-- Right: Prevention -->
+        <article class="card fill">
+          <h3>Prevention</h3>
+          <p>
+            We work to remove stigma, raise awareness, and make it simple to get help when it’s needed.
+          </p>
+          <ul>
+            <li>Warm handoffs to care</li>
+            <li>Crisis & safety planning</li>
+            <li>Community training & outreach</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Crisis & Immediate Help -->
+      <section class="card" style="margin-top:1.5rem;">
+        <h3>Need Help Now?</h3>
+        <p>
+          If you or someone you know is in crisis, please reach out immediately:
+        </p>
+        <ul>
+          <li><strong>988</strong> then press <strong>1</strong> — Veterans Crisis Line (24/7)</li>
+          <li><strong>Text</strong> <strong>838255</strong> — Veterans Crisis Line</li>
+          <li><strong>Chat</strong> with a responder at the official Veterans Crisis Line website</li>
+        </ul>
+        <p style="margin-top:.75rem;">
+          You are not alone. There is help, there is hope, and there is a community ready to stand with you.
+        </p>
+      </section>
+
+      <!-- Story Callouts -->
+      <section style="margin-top:1.5rem;">
+        <h2>Stories of Strength</h2>
+        <div class="three-up">
+          <article class="card">
+            <h3>“Finding My Squad Again”</h3>
+            <p>
+              After years of going it alone, Alex found community in a peer group and started mentoring others.
+            </p>
+          </article>
+          <article class="card">
+            <h3>“A Path to Care”</h3>
+            <p>
+              Jamie struggled to navigate benefits until a navigator walked step-by-step through the process.
+            </p>
+          </article>
+          <article class="card">
+            <h3>“Purpose in Transition”</h3>
+            <p>
+              Malik translated skills from service into a new role, with support from our career network.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card" style="margin-top:1.5rem;">
+        <h3>Share a Story or Get Support</h3>
+        <p>
+          Honor a veteran in your life, request support, or volunteer to mentor. <a href="contact.html">Contact us</a>
+          and we’ll follow up with next steps.
+        </p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Veterans Support Network</h3>
+          <p>Respect. Resources. Community.</p>
+        </div>
+        <div class="footer-right">
+          <p>&copy; <span id="year"></span> Veterans Support Network • 501(c)(3)</p>
+          <p>Contact: <a href="mailto:blangho1@my.westga.edu">blangho1@my.westga.edu</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
