@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donations • Veterans Support Network</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <div id="wrapper">
+
+    <!-- HEADER -->
+    <header>
+      <div class="top-header">
+        <img src="images/veteran-suicidebanner.png" alt="Veterans Support Network Logo" class="logo">
+
+        <div class="header-right">
+          <h1>Veterans Support Network</h1>
+
+          <!-- Mobile nav toggle -->
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+          <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </label>
+
+          <nav id="site-nav" aria-label="Primary">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="heroes.html">Heroes</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="donations.html" aria-current="page">Donations</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section>
+        <h2>Your Support Makes a Difference</h2>
+        <p>
+          Every donation helps us provide vital support to veterans in need, from access to benefits and healthcare to mental health resources and career training. Your contribution directly impacts the lives of those who have served our country.
+        </p>
+      </section>
+
+      <!-- Donation Form Section -->
+      <section id="donation-form">
+        <h2>Make a Donation Today</h2>
+        <p>
+          Choose an amount below to contribute. No donation is too small, and every bit counts toward improving the lives of veterans and their families.
+        </p>
+        
+        <!-- Embed JotForm Donation Form -->
+        <iframe src="https://form.jotform.com/253206709612050" width="100%" height="1000" frameborder="0" style="border: none;"></iframe>
+        
+        <!-- Alternative text for users with accessibility concerns -->
+        <p>If the form above does not display correctly, you can also make a donation through our <a href="https://www.example.com/donation-redirect">alternate donation page</a>.</p>
+      </section>
+
+      <!-- Additional Information Section -->
+      <section>
+        <h3>Why Donate?</h3>
+        <p>
+          Donations to the Veterans Support Network help fund essential services, including:
+        </p>
+        <ul>
+          <li>Veterans benefits assistance</li>
+          <li>Mental health and wellness programs</li>
+          <li>Career readiness and job placement</li>
+          <li>Community outreach and family support</li>
+        </ul>
+        <p>Your donation ensures that we can continue to provide these life-changing resources to those who have given so much for our country.</p>
+      </section>
+      
+      <!-- Get Started Section -->
+      <section class="card" style="margin-top:1.5rem;">
+        <h3>Get Involved</h3>
+        <p>If you would like to know more about our programs or have other ways to help, <a href="contact.html">contact us</a> for more information.</p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Veterans Support Network</h3>
+          <p>Respect. Resources. Community.</p>
+        </div>
+        <div class="footer-right">
+          <p>&copy; <span id="year"></span> Veterans Support Network • 501(c)(3)</p>
+          <p>Contact: <a href="mailto:blangho1@my.westga.edu">blangho1@my.westga.edu</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
